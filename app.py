@@ -30,7 +30,7 @@ PROMPT=PromptTemplate(template=prompt_template, input_variables=["context", "que
 
 chain_type_kwargs={"prompt": PROMPT}
 
-llm=CTransformers(model="C:/Users/USER/Downloads/mistral-7b-instruct-v0.1.Q4_K_M.gguf",
+llm=CTransformers(model="path/mistral-7b-instruct-v0.1.Q4_K_M.gguf",
                   model_type="mistral",
                   config={'max_new_tokens':100,
                           'temperature':0.5})
